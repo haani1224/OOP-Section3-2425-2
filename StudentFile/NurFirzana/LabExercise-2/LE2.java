@@ -48,7 +48,6 @@ class Employee {
         return empName;
     }
 
-
     // Q7: Access Modifiers
     private double salary;
 
