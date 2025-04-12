@@ -8,6 +8,6 @@
 - **GitHub Username:** yuhan00000
 
 ## About Me
-I am a second-year Computer Science student at Universiti Teknologi Malaysia. 
+I am currently a second-year student pursuing a Bachelor's Degree in Computer Science (Data Engineering) at Universiti Teknologi Malaysia. I enjoy learning about programming subjects.
 
 
