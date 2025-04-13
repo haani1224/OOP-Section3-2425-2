@@ -50,14 +50,14 @@ class Employee {
 
     //Question 7
     // TODO: Make salary private
-    private int salary;
+    private double salary;
 
     // TODO: Write setSalary() and getSalary() methods
-    public void setSalary(int s){
+    public void setSalary(double s){
         salary = s;
     }
 
-    public getSalary(){
+    public double getSalary(){
         return salary;
     }
 
