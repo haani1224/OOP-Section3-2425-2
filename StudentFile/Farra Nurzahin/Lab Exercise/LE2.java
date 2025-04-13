@@ -37,14 +37,14 @@ class Employee {
     }
 
     public void setEmpName(String name){
-        empNum = num;
+        empName = name;
     }
 
     public int getEmpNum(){
         return empNum;
     }
 
-    public int getEmpName(){
+    public String getEmpName(){
         return empName;
     }
 
