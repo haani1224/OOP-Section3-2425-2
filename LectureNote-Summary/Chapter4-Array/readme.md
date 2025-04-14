@@ -7,9 +7,6 @@ Sure! Below is a fully reworked and well-organized **Markdown version of the not
 
 ---
 
-> ✅ **You can copy the entire block below into your GitHub README or note file.**
-
----
 
 ```markdown
 # Chapter 4 - Arrays in Java
@@ -309,9 +306,5 @@ public class ArraySummaryDemo {
 }
 ```
 
----
 
-> ✅ Save this file as `README.md` or `ArrayConcepts.md` and place the `.java` file in your GitHub for sharing.
-```
 
-Let me know if you'd like me to split this into multiple files or export it into a downloadable `.md` and `.java` file set for you.
