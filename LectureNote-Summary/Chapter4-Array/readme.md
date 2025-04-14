@@ -1,4 +1,4 @@
-Sure! Below is a fully reworked and well-organized **Markdown version of the notes** from "Chapter 4 - Array" with:
+Below is a fully reworked and well-organized **Markdown version of the notes** from "Chapter 4 - Array" with:
 
 - ✅ All key concepts highlighted
 - ✅ Sample code for each concept
