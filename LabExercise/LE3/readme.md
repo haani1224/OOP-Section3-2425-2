@@ -119,7 +119,7 @@ Modify the starter code and **add these declarations**:
 
 ## 📝 Submission Instructions
 
-- Submit your Lab Exercise 3 folder in your file inside [StudentFile](../../StudentFile/)
+- Submit your Lab 3 folder in your file inside [StudentFile](../../StudentFile/)
 - Ensure all outputs are printed clearly with labels
 
 ---
