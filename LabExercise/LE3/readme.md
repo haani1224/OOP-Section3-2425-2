@@ -134,4 +134,3 @@ By completing this lab, you will:
 - Use `ArrayList` and anonymous arrays effectively
 - Apply variable-length arguments and nested loops
 
-```
