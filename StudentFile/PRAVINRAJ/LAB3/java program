@@ -1,1 +1,5 @@
+//Question 1
+ans : double gpa[] = new double[4];
 
+//Question 2
+ans : int[] points = {90,85,88};
