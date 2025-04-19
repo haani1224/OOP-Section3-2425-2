@@ -7,4 +7,4 @@
 - **GitHub Username:** AlifFathi
 
 ## About Me
-TEST.
+I am a computer science student that enjoy coding solve problems.
