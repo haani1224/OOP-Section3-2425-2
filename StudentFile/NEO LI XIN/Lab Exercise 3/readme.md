@@ -15,8 +15,8 @@ Modify the given Java program to complete the tasks below. The questions are div
    ```java
    double gpa[] = new double(4); // Line to fix
    ```
-   ```java
    ✅ The correct syntax:
+   ```java
    double[] gpa = new double(4);
    ```
 
@@ -25,8 +25,8 @@ Modify the given Java program to complete the tasks below. The questions are div
    int[] points;
    points = {90, 85, 88}; // Line to fix
    ```
-   ```java
    ✅ The correct syntax:
+   ```java
    int[] points;
    points = {{90, 85, 88}};
    ```
@@ -37,8 +37,8 @@ Modify the given Java program to complete the tasks below. The questions are div
        // ...
    }
    ```
-   ```java
    ✅ The correct syntax:
+   ```java
    public static void printTotal(int... values, String title) { // Invalid
        // ...
    }
