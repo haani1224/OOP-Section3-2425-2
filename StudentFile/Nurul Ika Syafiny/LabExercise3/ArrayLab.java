@@ -1,132 +1,120 @@
-public class LAB1 {
+import java.util.*;
+
+public class ArrayLab {
+
+    // Part A: Fixed array initialization errors
+    double[] gpa = new double[4]; // FIXED
+    int[] points = new int[] {90, 85, 88}; // FIXED
+    public static void printTotal(String title, int... values) {
+    } //FIXED
+
+    //PART B & C
     public static void main(String[] args) {
-        Employee e1 = new Employee();
-        e1.setEmpNum(101);
-        e1.setEmpName("Ali");
-        System.out.println("Employee Number: " + e1.getEmpNum());
-        System.out.println("Employee Name: " + e1.getEmpName());
+        Scanner input = new Scanner(System.in);
 
-        Book b1 = new Book("Java 101", "John Doe");
-        b1.display();
+        // Anonymous array with average printed using helper
+        printAverage(new int[] {10, 20, 30, 40}, "Average of 10, 20, 30, 40");
 
-        new User();
-        new User();
-        System.out.println("Total Users: " + User.getUserCount());
+        // 1D array for student scores
+        int[] scores = new int[5];
+        for (int i = 0; i < scores.length; i++) {
+            System.out.print("Enter score " + (i + 1) + ": ");
+            scores[i] = input.nextInt();
+        }
 
-        Employee_02 e = new Employee_02();
-        e.setSalary(5000);
-        System.out.println("Salary: " + e.getSalary());
+        // 2D array for marks of 3 students and 3 subjects
+        int[][] marks = {
+            {85, 78, 90},
+            {88, 92, 79},
+            {75, 80, 85}
+        };
+
+        // ArrayList of subjects
+        ArrayList<String> subjects = new ArrayList<>();
+        subjects.add("Math");
+        subjects.add("Science");
+        subjects.add("English");
+
+        //Matrix array declarations
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        ArrayList<Double> grades = new ArrayList<>();
+        grades.add(88.5);
+        grades.add(76.0);
+        grades.add(92.5);
+
+        // Array of Student objects
+        Student[] students = new Student[3];
+        students[0] = new Student("Ali", 20);
+        students[1] = new Student("Siti", 21);
+        students[2] = new Student("Raj", 19);
+
+        //Use helper method to print student info
+        printStudentInfo(students);
+
+        //Call method to find highest score
+        int highest = findHighestScore(scores);
+        System.out.println("Highest score entered: " + highest);
+
+        //Sum of all subject marks
+        int totalMarks = sumSubjectMarks(marks);
+        System.out.println("Total sum of all marks: " + totalMarks);
+
+        input.close();
+    }
+
+    public static void printAverage(int[] values, String title) {
+        int sum = 0;
+        for (int v : values) sum += v;
+        double average = (double) sum / values.length;
+        System.out.println(title + " = " + average);
+    }
+
+    //Find the highest score in an array
+    public static int findHighestScore(int[] scores) {
+        int max = scores[0];
+        for (int score : scores) {
+            if (score > max) {
+                max = score;
+            }
+        }
+        return max;
+    }
+
+    //Print student info using enhanced loop
+    public static void printStudentInfo(Student[] arr) {
+        for (Student s : arr) {
+            System.out.println("Student: " + s.getName() + ", Age: " + s.getAge());
+        }
+    }
+
+    //Sum of all elements in 2D array
+    public static int sumSubjectMarks(int[][] marks) {
+        int sum = 0;
+        for (int[] row : marks) {
+            for (int mark : row) {
+                sum += mark;
+            }
+        }
+        return sum;
     }
 }
 
-class Employee {
-    // TODO: Add fields
-    private int empNum;
-    private String empName;
-
-    // TODO: Add setter and getter methods
-    public void setEmpNum(int num) {
-        empNum = num;
-    }
-
-    public int getEmpNum() {
-        return empNum;
-    }
-
-    public void setEmpName(String name) {
-        empName = name;
-    }
-
-    public String getEmpName() {
-        return empName;
-    }
-}
-
-class Car {
-    // TODO: Declare two private instance variables (brand and year)
-    private String brand;
-    private int year;
-
-    // TODO: Create setter for brand
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    // TODO: Create getter for year
-    public int getYear() {
-        return year;
-    }
-}
-
-class Book {
-    private String title;
-    private String author;
-
-    // TODO: Add a constructor
-    public Book(String title, String author) {
-        this.title = title;
-        this.author = author;
-    }
-
-    public void display() {
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author);
-    }
-}
-
+// Student class
 class Student {
     private String name;
     private int age;
 
-    // TODO: Implement setter for name
-    public void setName(String name) {
+    public Student(String name, int age) {
         this.name = name;
+        this.age = age;
     }
 
-    // TODO: Implement getter for age
-    public int getAge() {
-        return age;
-    }
-}
-
-class Message {
-    // TODO: Write a method display() that prints "Hello!"
-    public void display() {
-        System.out.println("Hello!");
-    }
-
-    // TODO: Overload display(String msg) to print "Message: msg"
-    public void display(String msg) {
-        System.out.println("Message: " + msg);
-    }
-}
-
-class User {
-    // TODO: Declare a static counter variable
-    private static int counter = 0;
-
-    public User() {
-        // TODO: Increment counter
-        counter++;
-    }
-
-    public static int getUserCount() {
-        // TODO: Return counter
-        return counter;
-    }
-}
-
-class Employee_02 {
-    // TODO: Make salary private
-    private double salary;
-
-    // TODO: Write setSalary() and getSalary() methods
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
+    public String getName() { return name; }
+    public int getAge() { return age; }
 }
 
