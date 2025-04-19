@@ -28,7 +28,7 @@ Modify the given Java program to complete the tasks below. The questions are div
    ✅ The correct syntax:
    ```java
    int[] points;
-   points = {{90, 85, 88}};
+   points = new int[] {90, 85, 88};
    ```
 
 4. ❌ Correct the misuse of variable-length arguments:
