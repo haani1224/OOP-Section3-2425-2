@@ -3,9 +3,9 @@
 ## 👨‍🏫 Objective
 Modify the given Java program to complete the tasks below. The questions are divided into three categories:
 
-1. 🔍 Spot the errors (Answer below)
-2. ✍️ Write short array declarations (Answered in file name Advanced_Array_Practice.java)
-3. 🔧 Create and implement helper methods (Answered in file name Advanced_Array_Practice.java)
+1. 🔍 Spot the errors **(Answered below)**
+2. ✍️ Write short array declarations **(Answered in file name Advanced_Array_Practice.java)**
+3. 🔧 Create and implement helper methods **(Answered in file name Advanced_Array_Practice.java)**
 
 ---
 
