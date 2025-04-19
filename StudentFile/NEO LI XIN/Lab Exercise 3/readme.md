@@ -15,15 +15,21 @@ Modify the given Java program to complete the tasks below. The questions are div
    ```java
    double gpa[] = new double(4); // Line to fix
    ```
-   ✅
+   ```java
+   ✅ The correct syntax:
    double[] gpa = new double(4);
+   ```
 
 3. ❌ The following shorthand array causes a compile error. Identify and correct the issue:
    ```java
    int[] points;
    points = {90, 85, 88}; // Line to fix
    ```
-   ✅
+   ```java
+   ✅ The correct syntax:
+   int[] points;
+   points = {{90, 85, 88}};
+   ```
 
 4. ❌ Correct the misuse of variable-length arguments:
    ```java
@@ -31,6 +37,11 @@ Modify the given Java program to complete the tasks below. The questions are div
        // ...
    }
    ```
-   ✅
+   ```java
+   ✅ The correct syntax:
+   public static void printTotal(int... values, String title) { // Invalid
+       // ...
+   }
+   ```
 
 ---
