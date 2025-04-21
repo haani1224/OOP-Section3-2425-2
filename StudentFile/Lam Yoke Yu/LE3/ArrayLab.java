@@ -102,8 +102,7 @@ public class ArrayLab {
 
         // Question 6
         System.out.println("*** Question 6 ****");
-        int [] anonymousArray = {10, 20, 30, 40};
-        printAverage(anonymousArray);
+        printAverage(new int[]{10, 20, 30, 40});
     }
 
     public static void printAverage(int[] a){
